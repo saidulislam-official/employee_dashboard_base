@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+
+   <record id="action_upload_document" model="ir.actions.client">
+        <field name="name">Dashboard</field>
+        <field name="tag">employee_dashboard_base</field>
+        <field name="target">main</field>
+    </record>
+
+    <menuitem id="menu_employee_dashboard_base_root" name="My Dashboard" sequence="90"/>
+
+    <menuitem id="menu_employee_dashboard_base" name="Dashboard" sequence="10" parent="menu_employee_dashboard_base_root" action="action_upload_document"/>
+
+</odoo>
